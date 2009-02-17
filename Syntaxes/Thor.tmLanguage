@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>Thorfile</string>
+		<string>thor</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>(?x)^
+	    (\s*+
+	        (module|class|def(?!.*\bend\s*$)
+	        |unless|if
+	        |case
+	        |begin
+	        |for|while|until
+	         |^=begin
+	        |(  "(\\.|[^"])*+"          # eat a double quoted string
+	         | '(\\.|[^'])*+'        # eat a single quoted string
+	         |   [^#"']                # eat all but comments and strings
+	         )*
+	         (                        \s   (do|begin|case)
+	         | (?&lt;!\$)[-+=&amp;|*/~%^&lt;&gt;~] \s*+ (if|unless)
+	         )
+	        )\b
+	        (?! [^;]*+ ; .*? \bend\b )
+	    |(  "(\\.|[^"])*+"              # eat a double quoted string
+	     | '(\\.|[^'])*+'            # eat a single quoted string
+	     |   [^#"']                    # eat all but comments and strings
+	     )*
+	     ( \{ (?!  [^}]*+ \} )
+	     | \[ (?! [^\]]*+ \] )
+	     )
+	    ).*$
+	|   [#] .*? \(fold\) \s*+ $         # Sune’s special marker
+	</string>
+	<key>foldingStopMarker</key>
+	<string>(?x)
+		(   (^|;) \s*+ end   \s*+ ([#].*)? $
+		|   (^|;) \s*+ end \. .* $
+		|   ^     \s*+ [}\]] ,? \s*+ ([#].*)? $
+		|   [#] .*? \(end\) \s*+ $    # Sune’s special marker
+		|   ^=end
+		)</string>
+	<key>keyEquivalent</key>
+	<string>^~R</string>
+	<key>name</key>
+	<string>Thor (Ruby)</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>\b(Thor)\b</string>
+			<key>name</key>
+			<string>support.class.thor</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;![\.:])\b(default_task|desc|group|map|method_options)\b(?![?!])</string>
+			<key>name</key>
+			<string>support.function.thor</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.ruby</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict/>
+	<key>scopeName</key>
+	<string>source.ruby.thor</string>
+	<key>uuid</key>
+	<string>013EE18D-BB97-4502-91E7-E30E188053CC</string>
+</dict>
+</plist>

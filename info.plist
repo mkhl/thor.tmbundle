@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>contactEmailRot13</key>
+	<string>znegva.xhruy@tznvy.pbz</string>
+	<key>contactName</key>
+	<string>Martin Kuehl</string>
+	<key>description</key>
+	<string>Support for editing Thor classes.</string>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>611AF5B1-4BD9-45AF-B272-5AB3070F6F12</string>
+			<string>04AA39F8-009A-41CE-BCE1-61A7C59B15DE</string>
+			<string>40EBBDCA-870F-48C1-99BC-8477D6FB3770</string>
+			<string>------------------------------------</string>
+			<string>F6A34AC3-77F2-4E34-A697-C42FACAB688A</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
+	<key>name</key>
+	<string>Ruby Thor</string>
+	<key>ordering</key>
+	<array>
+		<string>F6A34AC3-77F2-4E34-A697-C42FACAB688A</string>
+		<string>611AF5B1-4BD9-45AF-B272-5AB3070F6F12</string>
+		<string>04AA39F8-009A-41CE-BCE1-61A7C59B15DE</string>
+		<string>40EBBDCA-870F-48C1-99BC-8477D6FB3770</string>
+		<string>013EE18D-BB97-4502-91E7-E30E188053CC</string>
+	</array>
+	<key>uuid</key>
+	<string>E3787840-CC29-4544-85BD-20C107225E9C</string>
+</dict>
+</plist>

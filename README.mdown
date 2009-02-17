@@ -1,0 +1,24 @@
+# Introduction
+
+Thor is a Ruby scripting framework that replaces rake and sake, by [Yehuda
+Katz](http://www.yehudakatz.com/ "Katz Got Your Tongue?"). Further information
+and source code are available from [GitHub](http://github.com/wycats/thor
+"wycats's thor at master - GitHub").
+
+This bundle provides basic syntax highlighting for Thor on top of the Ruby
+grammar and a few useful snippets for your Thor files.
+
+# Snippets
+
+* **`class … < Thor … end`**  
+  Create a subclass of `Thor` to contain your commands.  
+  Tab Trigger: `thor`
+
+* **`def … end`**  
+  Create a command in your `Thor` subclass, complete with description and
+  optional option parsing.  
+  Tab Trigger: `def`
+
+* **`map …`**  
+  Create a mapping from a flag to a method.  
+  Tab Trigger: `map`

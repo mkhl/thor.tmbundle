@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>class ${1:${TM_FILENAME/(?:\A|_)([A-Za-z0-9]+)(?:\.rb)?/(?2::\u$1)/g}} &lt; Thor
+	${0:# code}
+end</string>
+	<key>name</key>
+	<string>class … &lt; Thor … end</string>
+	<key>scope</key>
+	<string>source.ruby.thor</string>
+	<key>tabTrigger</key>
+	<string>thor</string>
+	<key>uuid</key>
+	<string>611AF5B1-4BD9-45AF-B272-5AB3070F6F12</string>
+</dict>
+</plist>
