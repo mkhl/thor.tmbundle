@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>desc "${2:${1/^([^\(]+).*/$1/} ${3:usage}}", "${4:Description of ${1/^([^\(]+).*/$1/}}"
-${5:method_options ${6::option} =&gt; ${7::type}
-}def ${1:method_name(option)}
+	<string>desc "${1}${3:${2/(?:(\w+)\s*=\s*.*?|(\w+)\s*)(?:,|$)\s*/(?1: \U[$1]\E)(?2: \U$2\E)/g}}", "${4:description}"
+${5:method_options ${6::${7:name}} =&gt; ${8::${9:default}}
+}def ${1:task}${2/(.+)/(/}${2:args}${2/(.+)/)/}
 	$0
 end</string>
 	<key>name</key>
