@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>map '${2:-${1/^\W*(\w).*/\l$1/}}' =&gt; ${1::method_name}</string>
+	<string>map ${1:"${2:input}"} =&gt; ${3::${4:task}}</string>
 	<key>name</key>
 	<string>map …</string>
 	<key>scope</key>
