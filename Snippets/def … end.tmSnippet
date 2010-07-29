@@ -13,7 +13,7 @@ end</string>
 	<key>scope</key>
 	<string>source.ruby.thor</string>
 	<key>tabTrigger</key>
-	<string>def</string>
+	<string>task</string>
 	<key>uuid</key>
 	<string>04AA39F8-009A-41CE-BCE1-61A7C59B15DE</string>
 </dict>
