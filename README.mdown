@@ -1,24 +1,42 @@
 # Introduction
 
-Thor is a Ruby scripting framework that replaces rake and sake, by [Yehuda
-Katz](http://www.yehudakatz.com/ "Katz Got Your Tongue?"). Further information
-and source code are available from [GitHub](http://github.com/wycats/thor
-"wycats's thor at master - GitHub").
+Thor is a Ruby scripting framework that replaces rake and sake, by
+[Yehuda Katz](http://www.yehudakatz.com/ "Katz Got Your Tongue?").
+Further information and source code are available from
+[GitHub](http://github.com/wycats/thor), documentation can be found at
+[rdoc.info](http://rdoc.info/projects/wycats/thor).
 
-This bundle provides basic syntax highlighting for Thor on top of the Ruby
-grammar and a few useful snippets for your Thor files.
+This bundle provides basic syntax highlighting for Thor on top of the
+Ruby grammar and a few useful snippets for your Thor files.
 
 # Snippets
 
 * **`class … < Thor … end`**  
-  Create a subclass of `Thor` to contain your commands.  
+  Create a command line utility by subclassing `Thor`.  
   Tab Trigger: `thor`
 
+* **`include Thor::Actions`**  
+  Include the convenience methods from `Thor::Actions`.  
+  Tab Trigger: `tacs`
+
 * **`def … end`**  
-  Create a command in your `Thor` subclass, complete with description and
-  optional option parsing.  
-  Tab Trigger: `def`
+  Create a command line task by defining a method in a `Thor` subclass,
+  including a description and, optionally, option parsing.  
+  Tab Trigger: `task`
 
 * **`map …`**  
-  Create a mapping from a flag to a method.  
+  Map an identifier to a specific task.  
   Tab Trigger: `map`
+
+* **`desc …`**  
+  Add a description and usage information to the following task.  
+  Tab Trigger: `desc`
+
+* **`method_option …`**  
+  Add a single option to the following task.  
+  Tab Trigger: `opt`
+
+* **`method_options …`**  
+  Add multiple options to the following task.  
+  Tab Trigger: `opts`
+
