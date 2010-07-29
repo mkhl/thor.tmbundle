@@ -57,9 +57,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;![\.:])\b(default_task|desc|group|map|method_options)\b(?![?!])</string>
+			<string>\b(check_unknown_options[?!]|default_task|desc|help|long_desc|map|method_options?|printable_tasks|subcommands?|task_help)\b(?![?!])</string>
 			<key>name</key>
-			<string>support.function.thor</string>
+			<string>support.function.default.thor</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(invoke|shell|options|behavior|root|destination_root|relative_root|action|add_file|create_file|in_root|inside|run|run_ruby_script)\b(?![?!])</string>
+			<key>name</key>
+			<string>support.function.reserved.thor</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>:(?:boolean|numeric|hash|array|string)\b</string>
+			<key>name</key>
+			<string>support.constant.type.thor</string>
 		</dict>
 		<dict>
 			<key>include</key>
